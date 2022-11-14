@@ -1,6 +1,8 @@
 <html>
 <head>
 <title>cloud computing</title>
-<h1>hello</h1>
 </head>
+<body>hello adding image
+<h1>hello</h1>
+</body>
 </html>
