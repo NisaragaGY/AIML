@@ -1,0 +1,37 @@
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+df=pd.read_csv("C:/Users/CSE WPT/Desktop/IRIS.csv")
+
+df.shape
+
+(150, 5)
+
+df_setosa=df.loc[df['species']=='Iris-setosa']
+
+df_setosa=df.loc[df['species']=='Iris-setosa']
+
+df_virginica=df.loc[df['species']=='Iris-virginica']
+
+df_versicolor=df.loc[df['species']=='Iris-versicolor']
+
+plt.plot(df_setosa['sepal_length'],np.zeros_like(df_setosa['sepal_length']),'o')
+plt.plot(df_virginica['sepal_length'],np.zeros_like(df_virginica['sepal_length']),'o')
+plt.plot(df_versicolor['sepal_length'],np.zeros_like(df_versicolor['sepal_length']),'o')
+plt.xlabel('petal length')
+Text(0.5, 0, 'petal length')
+
+nd
+
+sns.FacetGrid(df,hue="species",size=5).map(plt.scatter,"petal_length","sepal_width").add_legend();
+C:\Users\CSE WPT\anaconda3\lib\site-packages\seaborn\axisgrid.py:337: UserWarning: The `size` parameter has been renamed to `height`; please update your code.
+  warnings.warn(msg, UserWarning)
+
+,height=5
+sns.pairplot(df,hue='species',height=5)
+<seaborn.axisgrid.PairGrid at 0x18f3590c8e0>
+
+​
+
